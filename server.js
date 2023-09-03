@@ -19,6 +19,7 @@ mongoose
 		useCreateIndex: true,
 		useFindAndModify: true,
 		useUnifiedTopology: true,
+		connectTimeoutMS: 30000,
 	})
 	.then(() => console.info('SUCCESSFULLY CONNECT TO MONGODB'))
 	.catch((error) => console.error(`DB CONNECTION ERROR ${error}`));
